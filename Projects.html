@@ -16,6 +16,7 @@
 </head>
 
 <body>
+  <div id="left"></div><div id="right"></div><div id="top"></div><div id="bottom"></div>
   <div id="main-wrapper">
     <div id="wrapper">
       <div class="header">
@@ -33,9 +34,6 @@
             <div class="svgico">
               <a href="https://github.com/sindhurimamidi" target="_blank"><img src="files/git.png" height="26px"></a>
             </div>
-            <div class="svgico">
-              <a href="https://plus.google.com/+SindhuriMamidi" target="_blank"><img src="files/gplus.png" height="26px"></a>
-          </div>
           <div class="svgico">
               <a href="https://www.dropbox.com/s/x79nyl9o4i6lulc/Sindhuri%20Mamidi%20.docx?dl=0" target="_blank"><img src="files/resume.png" height="26px"></a>
             </div>
@@ -60,13 +58,64 @@
 
       <div class="container" id="content">
 
-      </br>
-      
-        
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h3 class="panel-title">Predicting the Super Bowl and College Football Champions of 2015</h3>
+          </div>
+          <div class="panel-body">
+            <img class="img-responsive img-thumbnail" style='float:right;width:400px; margin-left:5px;' src="files/superbowl_img.png" />
+            <p>The goal of this project is to build machine learning models to predict the winners of 2015 Super Bowl and the College Football Championship using historical data.</p>
+            <p>We have predicted the outcome of football matches entirely using the knowledge of previous game statistics. We have used three different models to do this:</p>
+            <ol>
+                <li><mybold>Baseline model:</mybold>  "Point Score Difference Model". In this model we use the score difference to predict winners of future games.</li>
+                <li><mybold>Linear Regression Model:</mybold> In this model, we use linear regression to predict the point difference for each game.</li>
+                <li><mybold>PageRank Model:</mybold> Here, we model the game data as a graph with nodes as teams and edges as score differences between the teams. We then use PageRank on this game graph to rank all the teams. This ranking is used to predict winners of future games.</li>
+            </ol>
+
+            <p>More information about the project can be found <a target="_blank" href="http://www3.cs.stonybrook.edu/~skiena/591/final_projects/football/">here</a>.</p>
+          </div>
       </div>
 
 
-  </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h3 class="panel-title">Online Fraud detection in Yelp Review data</h3>
+          </div>
+          <div class="panel-body">
+            <img class="img-responsive img-thumbnail" style='float:right;width:400px; margin-left:5px;' src="files/lda_img.png" />
+            <p>The goal of this project is to predict fake reviews by looking at connections among fake reviewers using network effects and relational analysis. Techniques here aim at capturing the relationships among reviewers, reviews and stores and also among reviewers/reviews. </p>
+            <ol>
+                For Behavioral analysis, we have analyzed the reviewers profile on Yelp based on following factors.
+                <li>Maximum Number of Reviews</li>
+                <li>Percentage of Positive Reviews</li>
+                <li>Review Length</li>
+                <li>Review Deviation</li>
+                <li>Maximum Content Similarity</li>
+                </li>
+            </ol>
+            <p>We have achieved 76% accuracy in detecting fake reviews of Yelp using Behavioral features listed above.</p>
+            
+          </div>
+      </div>
+
+
+
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h3 class="panel-title">Chicago crime analysis</h3>
+          </div>
+          <div class="panel-body">
+            <img class="img-responsive img-thumbnail" style='float:right;width:400px; margin-left:5px;' src="files/cnn_img.png" />
+            <p>Aim of this project is to analyze the chicago crime rate over the years.
+            Configured 4 node hadoop cluster and loaded 5 GB of data using HDFS and HBASE. Performed
+different types of analysis and multiple MapReduce jobs using Pig, Hive and Spark. Implemented
+Mahout Clustering K-Means Algorithm to help estimate future crime rates.</p>
+            
+      </div>
+
+      </div>
+      </br>
+    </div> <!-- /container -->
 
 </body>
 
